@@ -1,0 +1,10 @@
+*.[ch]
+*.[5678vqo]
+*.a
+[5678vq].out
+_obj
+_test
+_testmain.go
+_cgo_*.go
+*.cgo*.go
+basic

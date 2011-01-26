@@ -24,3 +24,7 @@ liblua:
 basic: liblua install basic.go
 	$(GC) basic.go
 	$(LD) -o $@ basic.$O
+
+basicc: liblua
+	cc -c -o basic.o -Ilua-5.1.4/src basic.c
+	cc -o basic.aout basic.c lua-5.1.4/src/liblua.a

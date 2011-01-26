@@ -192,6 +192,12 @@
 #define LUAI_DATA	extern
 #endif
 
+/* For Go-Lua bindings */
+#undef LUAI_FUNC
+#undef LUAI_DATA
+
+#define LUAI_FUNC	extern
+#define LUAI_DATA	extern
 
 
 /*

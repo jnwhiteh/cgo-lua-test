@@ -5,7 +5,7 @@ TARG=golua
 # Can have plain GOFILES too, but this example doesn't.
 
 CGOFILES=\
-	golua.go
+		 golua.go
 
 CGO_CFLAGS=-Ilua-5.1.4/src
 CGO_LDFLAGS=-lm

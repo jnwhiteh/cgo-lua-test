@@ -192,6 +192,13 @@
 #define LUAI_DATA	extern
 #endif
 
+/* Force hidden funtions and data to be exported instead of hidden */
+#undef LUAI_FUNC
+#undef LUAI_DATA
+
+#define LUAI_FUNC
+#define LUAI_DATA extern
+
 /*
 @@ LUA_QL describes how error messages quote program elements.
 ** CHANGE it if you want a different appearance.

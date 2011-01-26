@@ -8,6 +8,7 @@ CGOFILES=\
 	golua.go
 
 CGO_CFLAGS=-Ilua-5.1.4/src
+CGO_LDFLAGS=-lm
 
 CGO_OFILES = \
 			 lua-5.1.4/src/lapi.o \

@@ -8,3 +8,4 @@ _testmain.go
 _cgo_*.go
 *.cgo*.go
 basic
+basic.aout

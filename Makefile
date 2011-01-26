@@ -20,6 +20,9 @@ include $(GOROOT)/src/Make.pkg
 liblua:
 	make -C lua-5.1.4 posix
 
+pristine: clean
+	make -C lua-5.1.4 clean
+
 # Simple test programs
 basic: liblua install basic.go
 	$(GC) basic.go

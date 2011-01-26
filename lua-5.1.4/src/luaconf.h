@@ -192,14 +192,6 @@
 #define LUAI_DATA	extern
 #endif
 
-/* For Go-Lua bindings */
-#undef LUAI_FUNC
-#undef LUAI_DATA
-
-#define LUAI_FUNC	extern
-#define LUAI_DATA	extern
-
-
 /*
 @@ LUA_QL describes how error messages quote program elements.
 ** CHANGE it if you want a different appearance.
